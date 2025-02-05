@@ -21,13 +21,12 @@ api_key = os.getenv("API_KEY")
 workspace_name = os.getenv("WORKSPACE_NAME")
 workflow_id = os.getenv("WORKFLOW_ID")
 
-video_path = "Videos/acci.mp4"
 
 pipeline = InferencePipeline.init_with_workflow(
     api_key=api_key,
     workspace_name=workspace_name,
     workflow_id=workflow_id,
-    video_reference=video_path,
+    video_reference=https://youtu.be/46iWkLmZ4g8?feature=shared,
     max_fps=30,
     on_prediction=combined_sink
 )
